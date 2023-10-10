@@ -1,27 +1,25 @@
 import React from 'react';
-import me from '../../assets/me.jpg'
+import me from '../../assets/mev2.jpg'
 import cyberbanner from '../../assets/cyberbanner.jpg'
+import cyberbannerred from '../../assets/cyberbannerred.jpg'
 
 function AboutPage() {
   return (
     <div className="about-page">
-      <div className="profile-section">
+      <div className="profile-section" style={{ backgroundImage: `url(${cyberbannerred})` }}>
         <div className="profile-image">
           <img src={me} alt="Profile" />
         </div>
         <div className="about-text">
-          <p>&#9996; "Hello there" &#9996;</p>
+          <p>&#9996; "Hello There" &#9996;</p>
           <h2>John Magnuson</h2>
           <p>Full Stack Software Engineer</p>
-          <p>Random Information Engulfer</p>
+          <p className="aboutLast">Random Information Engulfer</p>
         </div>
       </div>
-      <div className="wide-image">
-        <img src={cyberbanner} alt="cyberbanner" />
-      </div>
-      <div className="description-section">
-        <h2>Hobbies</h2>
-        <p>The picture above is of my two cars, which I absolutely adore. The left one being a 1992 BMW E36 325IS, and the right one being a 1992 Silvia Q's</p>
+      <div className="description-section" style={{ backgroundImage: `url(${cyberbanner})` }}>
+        <h2  className="desc-header">Hobbies</h2>
+        <p>I own two cars, which I absolutely adore. A 1992 BMW E36 325IS, and a 1992 Silvia Q's</p>
         <p>My other hobbies include:</p>
         <li>3D-Printing</li>
         <li>Video Games &#127918;</li>

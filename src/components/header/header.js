@@ -1,10 +1,12 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import bannerlime from '../../assets/bannerlime.jpg'
 
 function Header({ setPage }) {
   return (
-    <header className="header">
+    <header className="header" style={{ backgroundImage: `url(${bannerlime
+  })` }}>
       <Navbar expand="lg">
         <Navbar.Brand as={NavLink} to="/" className="header-title">Home</Navbar.Brand>
         <Nav className="ml-auto header-links">

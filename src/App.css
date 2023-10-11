@@ -4,10 +4,10 @@
   color: white; /* Set the text color to white */
   font-weight: bold; /* Make the text bold */
   text-shadow: 
-    -2px -2px 0 black, /* Top-left shadow */
-    2px -2px 0 black, /* Top-right shadow */
-    -2px 2px 0 black, /* Bottom-left shadow */
-    2px 2px 0 black; /* Bottom-right shadow */
+    -1px -1px 0 black, /* Top-left shadow */
+    1px -1px 0 black, /* Top-right shadow */
+    -1px 1px 0 black, /* Bottom-left shadow */
+    1px 1px 0 black; /* Bottom-right shadow */
 }
 
 .App-logo {
@@ -46,6 +46,8 @@
 }
 
 
+
+/* ////////// HEADER CSS ///////////// */
 .header {
   background-color: #F2CC0F;
   color: rgb(255, 255, 255); /* Updated text color to black */
@@ -59,7 +61,7 @@
   -.5px .5px 0 black, /* Bottom-left shadow */
   .5px .5px 0 black; /* Bottom-right shadow */
   background-size: contain;
-  background-position: bottom;
+  background-position: center center;
   background-repeat: repeat;
 }
 
@@ -95,22 +97,38 @@
 }
 
 
+/* /////////// FOOTER CSS //////////////*/
 .footer {
   background-size: contain;
-  background-position: right right;
+  background-position: center center;
   background-repeat: repeat;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }
 
 .footer-text {
   margin-top: 0;
 }
 
-.footer-center {
+.footer-icon {
   font-size: 3rem;
   color: rgb(255, 255, 255);
-  text-decoration: none;
 }
 
+
+
+/* /////////// ABOUT PAGE CSS /////////////// */
+.about-page {
+  background-color: #024059;
+  text-shadow: 
+  -1.5px -1.5px 0 black, /* Top-left shadow */
+  1.5px -1.5px 0 black, /* Top-right shadow */
+  -1.5px 1.5px 0 black, /* Bottom-left shadow */
+  1.5px 1.5px 0 black; /* Bottom-right shadow */
+}
 
 .profile-section {
   background-size: cover;
@@ -125,9 +143,18 @@
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  margin-right: 20px;
+  margin: 0px;
+  border: 0px;
 }
 
+.about-text {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.aboutLast {
+  padding-bottom: 16px;
+  margin-bottom: 0;
+}
 
 /* used for wide image after profile pic but before hobbies */
 .wide-image {
@@ -145,27 +172,20 @@
   background-position: center center;
 }
 
-.about-text {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.aboutLast {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 .description-section {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  height: 370.8px;
+  height: 386.81px;
   margin: 0;
   padding: 0;
 }
 
+/* remember the below to get rid of bullet points in lists */
 .description-section li {
   list-style-type: none;
-  padding-left: 0; /* Remove default left padding */
+  padding-left: 0; /* Remove default left padding when bullets are gone*/
+  margin-bottom: 10px;
 }
 
 .desc-header {
@@ -173,6 +193,36 @@
   padding: 0;
 }
 
-.about-page {
-  background-color: #024059;
+
+
+
+/*  //////////////// PORTFOLIO SECTION //////////////// */
+.project-page {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-item {
+  max-width: 300px;
+  margin: 20px;
+  text-align: center;
+}
+
+.project-page a {
+  color: white;
+}
+
+.project-page img {
+  max-height: 152.75px;
+  min-height: 152.75px;
+  max-width: 100%;
+  aspect-ratio: 2;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #980bbf;
+  box-shadow: 5px 5px 5px #F2CC0F, -5px 5px 5px #2bf0fb;
 }

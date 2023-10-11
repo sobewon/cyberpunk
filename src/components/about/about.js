@@ -19,7 +19,7 @@ function AboutPage() {
       </div>
       <div className="description-section" style={{ backgroundImage: `url(${cyberbanner})` }}>
         <h2  className="desc-header">Hobbies</h2>
-        <p>I own two cars, which I absolutely adore. A 1992 BMW E36 325IS, and a 1992 Silvia Q's</p>
+        <p>I own two cars, which I absolutely love. A 1992 BMW E36 325IS, and a 1992 Nissan Silvia Q's</p>
         <p>My other hobbies include:</p>
         <li>3D-Printing</li>
         <li>Video Games &#127918;</li>

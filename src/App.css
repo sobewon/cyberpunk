@@ -56,10 +56,10 @@
   justify-content: center; /* Center align navigation buttons */
   align-items: center;
   text-shadow: 
-  -.5px -.5px 0 black, /* Top-left shadow */
-  .5px -.5px 0 black, /* Top-right shadow */
-  -.5px .5px 0 black, /* Bottom-left shadow */
-  .5px .5px 0 black; /* Bottom-right shadow */
+  -.5px -.5px 0 black,
+  .5px -.5px 0 black,
+  -.5px .5px 0 black,
+  .5px .5px 0 black;
   background-size: contain;
   background-position: center center;
   background-repeat: repeat;
@@ -212,7 +212,7 @@
 }
 
 .project-page a {
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .project-page img {
@@ -225,4 +225,36 @@
   border-width: 2px;
   border-color: #980bbf;
   box-shadow: 5px 5px 5px #F2CC0F, -5px 5px 5px #2bf0fb;
+}
+
+
+
+/*  //////////////// RESUME SECTION //////////////// */
+
+.resume-page {
+  height: 75vh;    /*come back and fix this, it doesn't adjust properly when
+  adjusting window size*/
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+
+}
+
+.skills-list {
+  margin: 0;
+  padding: 0;
+}
+
+.skills-list li {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.resume-text {
+  padding-left: 0;
+  margin-bottom: 10px;
+  color: rgb(242, 255, 64);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
